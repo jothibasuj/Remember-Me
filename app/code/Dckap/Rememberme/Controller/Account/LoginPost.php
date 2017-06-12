@@ -139,7 +139,6 @@ class LoginPost extends \Magento\Customer\Controller\Account\LoginPost
      */
     public function execute()
     {
-        //echo "aaaaaaaaaaaa"; exit;
         if ($this->session->isLoggedIn() || !$this->formKeyValidator->validate($this->getRequest())) {
             /** @var \Magento\Framework\Controller\Result\Redirect $resultRedirect */
             $resultRedirect = $this->resultRedirectFactory->create();
